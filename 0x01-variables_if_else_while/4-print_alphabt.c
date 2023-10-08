@@ -15,13 +15,13 @@ while (ch <= 'z')
 {
 if (ch == 'q' || ch == 'e')
 {
-    ch++;
-    continue;
+ch++;
+continue;
 }
 else
 {
-    putchar(ch);
-    ch++;
+putchar(ch);
+ch++;
 }
 }
 putchar('\n');
