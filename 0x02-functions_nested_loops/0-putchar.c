@@ -9,7 +9,6 @@
 */
 int main(void)
 {
-char msg;
 _putchar('_');
 _putchar('p');
 _putchar('u');
