@@ -20,15 +20,21 @@ if (prod >= 10)
 {
 _putchar('0' + prod / 10);
 _putchar('0' + prod % 10);
+if (j != 9)
+{
 _putchar(',');
 _putchar(' ');
+}
 }
 else
 {
 _putchar('0' + prod);
+if (j != 9)
+{
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
+}
 }
 j++;
 }
