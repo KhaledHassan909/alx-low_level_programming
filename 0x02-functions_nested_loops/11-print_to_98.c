@@ -1,0 +1,27 @@
+#include "main.h"
+
+void print_to_98(int n)
+{
+if (n < 98)
+{
+while (n < 99)
+{
+_putchar('0' + n);
+_putchar(',');
+_putchar(' ');
+n++;
+}
+}
+else if (n > 98)
+{
+while (n > 99)
+{
+_putchar('0' + n);
+_putchar(',');
+_putchar(' ');
+n--;
+}
+}
+else
+_putchar('0' + n); 
+}
