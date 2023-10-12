@@ -21,6 +21,7 @@ else
 printf("%d ", i);
 i++;
 }
+if (i != n)
 printf("\n");
 return (0);
 }
