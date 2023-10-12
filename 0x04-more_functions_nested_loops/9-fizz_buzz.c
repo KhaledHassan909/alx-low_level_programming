@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - fizz buzz program
- * @n: iteration number
+ * main - main function
  *
- * Return: None
+ * Return: 0 If True
  */
-void fizz_buzz(int n)
+int main(void)
 {
+int n = 100;
 int i = 1;
 while (i <= n)
 {
@@ -22,15 +22,5 @@ printf("%d ", i);
 i++;
 }
 printf("\n");
-}
-
-/**
- * main - main function
- *
- * Return: 0 If True
- */
-int main(void)
-{
-fizz_buzz(100);
 return (0);
 }
