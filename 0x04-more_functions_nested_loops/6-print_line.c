@@ -20,5 +20,6 @@ else
 _putchar('_');
 iter++;
 }
+if (n != 0)
 _putchar('\n');
 }
