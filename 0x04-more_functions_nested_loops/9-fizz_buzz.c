@@ -7,21 +7,22 @@
  */
 int main(void)
 {
-int n = 100;
+int n = 101;
 int i = 1;
-while (i <= n)
+while (i < n)
 {
 if (i % 3 == 0 && i % 5 == 0)
-printf("FizzBuzz ");
+printf("FizzBuzz");
 else if (i % 3 == 0)
-printf("Fizz ");
+printf("Fizz");
 else if (i % 5 == 0)
-printf("Buzz ");
+printf("Buzz");
 else
-printf("%d ", i);
+printf("%d", i);
 i++;
-}
 if (i != n)
+printf(" ");
+}
 printf("\n");
 return (0);
 }
