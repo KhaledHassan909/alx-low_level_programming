@@ -8,6 +8,8 @@
 /**
 * positive_or_negative - Check +ve or -ve
 *
+* @n: number to be checked
+*
 * Description: 'Positive,Negative or Zero'
 *
 * Return: None
