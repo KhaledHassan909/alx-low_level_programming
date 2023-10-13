@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
-* main - tests function that prints if integer is positive or negative
-* Return: 0
+* positive_or_negative - check if int +ve or -ve
+* @i: int to be checked
+* Return: None
 */
-int test_positive_or_negative(void)
-{
-        int i;
-        i = 98;
-        positive_or_negative(i);
 
-        return (0);
+void positive_or_negative(int i)
+{
+i = 98;
+positive_or_negative(i);
 }
