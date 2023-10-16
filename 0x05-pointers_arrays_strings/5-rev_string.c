@@ -7,7 +7,7 @@
  */
 void rev_string(char *s)
 {
-char rev_s[200];
+char rev_s[10];
 int i = strlen(s) - 1;
 for (; i >= 0; i--)
 rev_s[strlen(s) - 1 - i] = s[i];
