@@ -18,8 +18,8 @@ _putchar(str[i]);
 }
 else
 {
-i = (str_len - 1) / 2;
-for (; i < (str_len - 1); i++)
+i = ((str_len - 1) / 2) + 1;
+for (; i < str_len; i++)
 _putchar(str[i]);
 }
 _putchar('\n');
