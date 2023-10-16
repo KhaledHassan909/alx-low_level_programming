@@ -7,9 +7,13 @@
  */
 void rev_string(char *s)
 {
-char rev_s[10];
-int i = strlen(s) - 1;
-for (; i >= 0; i--)
-rev_s[strlen(s) - 1 - i] = s[i];
-strcpy(s, rev_s);
+int arr_length = strlen(s);
+int i;
+char t;
+for (i = 0; i < arr_length / 2; i++)
+{
+t = s[i];
+s[i] = s[strlen(s) - i - 1];
+s[strlen(s) - i - 1] = t;
+}
 }
