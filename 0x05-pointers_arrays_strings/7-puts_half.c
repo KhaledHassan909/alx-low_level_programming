@@ -13,13 +13,13 @@ int i;
 if ((str_len % 2) == 0)
 {
 i = str_len / 2;
-for (; i < str_len; i++)
+for (; i < (str_len - 1); i++)
 _putchar(str[i]);
 }
 else
 {
 i = (str_len - 1) / 2;
-for (; i < str_len; i++)
+for (; i < (str_len - 1); i++)
 _putchar(str[i]);
 }
 _putchar('\n');
