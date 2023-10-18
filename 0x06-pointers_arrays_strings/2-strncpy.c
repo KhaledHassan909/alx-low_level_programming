@@ -11,5 +11,21 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-return (strncpy(dest, src, n));
+int src_len = strlen(src);
+int i;
+char *ptr = dest;    
+for (i = 0; i < n; i++)
+{
+if (i >= src_len)
+break;
+else
+{
+while(*ptr != '\0')
+{
+ptr++;
+}
+*ptr = src[i];
+}
+}    
+return (dest);
 }
