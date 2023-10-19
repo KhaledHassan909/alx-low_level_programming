@@ -8,15 +8,15 @@
  */
 char *cap_string(char *ptr)
 {
-char spec_ch[12] = {',', ';', '.', '!',
-'?', '"', '(', ')', '{', '}', '\t', ' '};
+char spec_ch[14] = {',', ';', '.', '!', '-',
+'?', '"', '(', ')', '{', '}', '\t', ' ', '\n'};
 char *start = ptr;
 int i;
 if (((*ptr - 97) >= 0) && ((122 - *ptr) >= 0))
 *ptr -= 32;
 while (*ptr != '\0')
 {
-for (i = 0; i < 12; i++)
+for (i = 0; i < 14; i++)
 {
 if (*ptr == spec_ch[i])
 {
