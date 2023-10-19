@@ -8,7 +8,6 @@
  * @n:    number of bytes to be copied  from src
  * Return: concantenated string.
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
 char *src_ptr = src;
