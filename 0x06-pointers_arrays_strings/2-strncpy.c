@@ -24,7 +24,7 @@ src_ptr++;
 dest_ptr++;
 }
 }
-if (i < n)
+for (; i < n; i++)
 {
 dest[i] = '\0';
 }
