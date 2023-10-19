@@ -11,21 +11,23 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-int src_len = strlen(src);
+char *src_ptr = src;
+char *dest_ptr = dest;
 int i;
-char *ptr = dest;    
 for (i = 0; i < n; i++)
 {
-if (i >= src_len)
+if (*src_ptr == '\0')
 break;
 else
 {
-while(*ptr != '\0')
+*dest_ptr = *src_ptr;
+src_ptr++;
+dest_ptr++;
+}
+}
+if (i < n)
 {
-ptr++;
+dest[i] = '\0';
 }
-*ptr = src[i];
-}
-}    
 return (dest);
 }
