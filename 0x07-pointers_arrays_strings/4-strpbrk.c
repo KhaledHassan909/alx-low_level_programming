@@ -23,5 +23,5 @@ accept++;
 accept = start;
 s++;
 }
-return (s);
+return (NULL);
 }
