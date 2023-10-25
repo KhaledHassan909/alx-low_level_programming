@@ -1,0 +1,26 @@
+#include "main.h"
+
+/**
+ * _sqrt_helper - calculate square root of given number.
+ * @n:  number given
+ * @i:  incermented num.
+ * Return: square root value.
+ */
+int sqrt_helper(int n, int i)
+{
+if (i * i == n)
+return (i);
+if (i == n || n < 0)
+return (-1);
+return sqrt_helper(n, i + 1);
+}
+
+/**
+ * _sqrt_recursion - calculate square root of given number.
+ * @n:  number given.
+ * Return: square root value.
+ */
+int _sqrt_recursion(int n)
+{
+return sqrt_helper(n, 1);
+}
