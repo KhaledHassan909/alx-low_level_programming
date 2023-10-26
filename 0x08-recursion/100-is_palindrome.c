@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * helper - helper function for palindrome.
@@ -24,6 +25,6 @@ return (helper(s, start + 1, end - 1));
  */
 int is_palindrome(char *s)
 {
-int length = _strlen(s) - 1;
+int length = strlen(s) - 1;
 return (helper(s, 0, length));
 }
