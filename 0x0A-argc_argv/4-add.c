@@ -10,20 +10,8 @@
  */
 int main(int argc, char *argv[])
 {
-int mul = 1;
+int add = 0;
 int i;
 for (i = 1; i < argc; i++)
-{
-if (argc < 3)
-break;
-else
-{
-mul *= atoi(argv[i]);
-}
-}
-if (mul != 1)
-printf("%d\n", mul);
-else
-printf("ERROR\n");
 return (0);
 }
