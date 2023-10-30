@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[])
+{
+int arr[] = {25, 10, 5, 2, 1};
+int len = sizeof(arr) / sizeof(arr[0]);
+int amount = atoi(argv[1]);
+int i, count = 0;
+for (i = 0; i < len; i++)
+{
+while(amount >= arr[i])
+{
+amount -= arr[i];
+count++;
+}
+}
+printf("%d\n", count);
+return 0;
+}
