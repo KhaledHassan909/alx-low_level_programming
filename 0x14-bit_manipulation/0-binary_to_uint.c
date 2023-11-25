@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 	/* Get the length of the string */
-	str_len = _strlen(b);
+	str_len = strlen(b);
 
 	/* Move pointer to last char before \0 */
 	b += str_len - 1;
