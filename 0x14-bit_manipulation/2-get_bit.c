@@ -11,6 +11,10 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int iter = 0;
 
+	/* Check if index is greater than the bits no in unsigned long int */
+	if (index > (sizeof(n) * 8 - 1))
+		return (-1);
+
 	while (n != 0)
 	{
 		/* Catch desired index returning corresponding bit */
