@@ -26,7 +26,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		if ((res & 1) != 0)
 			inc++;
 		/* Right shift the bits of res by one place (equivalent to dividing by 2) */
-		res /= 2;
+		res = res >> 1;
 	}
 
 	/* Return the value of inc */
